@@ -1,0 +1,198 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Accessibility Toolbar 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-25 10:39\n"
+"PO-Revision-Date: 2026-03-25 11:45+0100\n"
+"Last-Translator: Rubén Alcaraz Martínez\n"
+"Language-Team: Catalan\n"
+"Language: ca_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.8\n"
+
+#: AccessibilityToolbarPlugin.php:23
+msgid "Open accessibility options"
+msgstr "Obre les opcions d'accessibilitat"
+
+#: AccessibilityToolbarPlugin.php:24
+msgid "Accessibility options"
+msgstr "Opcions d’accessibilitat"
+
+#: AccessibilityToolbarPlugin.php:25
+msgid "Accessibility"
+msgstr "Accessibilitat"
+
+#: AccessibilityToolbarPlugin.php:27
+msgid "Text size"
+msgstr "Mida del text"
+
+#: AccessibilityToolbarPlugin.php:28
+msgid "Use the minus and plus buttons to adjust the text size. The current value is announced automatically."
+msgstr "Utilitzeu els botons - i + per ajustar la mida del text. El valor actual s’anuncia automàticament."
+
+#: AccessibilityToolbarPlugin.php:29
+msgid "Decrease text size"
+msgstr "Redueix la mida del text"
+
+#: AccessibilityToolbarPlugin.php:30
+msgid "Increase text size"
+msgstr "Augmenta la mida del text"
+
+#: AccessibilityToolbarPlugin.php:31
+msgid "Reset text size"
+msgstr "Restableix la mida del text"
+
+#: AccessibilityToolbarPlugin.php:33
+msgid "Font"
+msgstr "Tipografia"
+
+#: AccessibilityToolbarPlugin.php:34
+msgid "Choose a reading font."
+msgstr "Trieu una tipografia de lectura."
+
+#: AccessibilityToolbarPlugin.php:35
+msgid "Default"
+msgstr "Per defecte"
+
+#: AccessibilityToolbarPlugin.php:36
+msgid "Arial"
+msgstr "Arial"
+
+#: AccessibilityToolbarPlugin.php:37
+msgid "Verdana"
+msgstr "Verdana"
+
+#: AccessibilityToolbarPlugin.php:38
+msgid "Comic Sans"
+msgstr "Comic Sans"
+
+#: AccessibilityToolbarPlugin.php:39
+msgid "OpenDyslexic"
+msgstr "OpenDyslexic"
+
+#: AccessibilityToolbarPlugin.php:41
+msgid "Appearance"
+msgstr "Aparença"
+
+#: AccessibilityToolbarPlugin.php:42
+msgid "High contrast"
+msgstr "Alt contrast"
+
+#: AccessibilityToolbarPlugin.php:43
+msgid "Black background and yellow text."
+msgstr "Fons negre i text groc."
+
+#: AccessibilityToolbarPlugin.php:44
+msgid "Underline links"
+msgstr "Subratlla els enllaços"
+
+#: AccessibilityToolbarPlugin.php:45
+msgid "Always underline hyperlinks for easier recognition."
+msgstr "Subratlla sempre els hiperenllaços per facilitar-ne la identificació."
+
+#: AccessibilityToolbarPlugin.php:46
+msgid "Increase line spacing"
+msgstr "Augmenta l’interlineat"
+
+#: AccessibilityToolbarPlugin.php:47
+msgid "Add more vertical space between lines of text."
+msgstr "Afegeix més espai vertical entre les línies de text."
+
+#: AccessibilityToolbarPlugin.php:48
+msgid "Increase letter spacing"
+msgstr "Augmenta l’espaiat entre lletres"
+
+#: AccessibilityToolbarPlugin.php:49
+msgid "Add more space between letters."
+msgstr "Afegeix més espai entre les lletres."
+
+#: AccessibilityToolbarPlugin.php:50
+msgid "Enhanced focus"
+msgstr "Focus millorat"
+
+#: AccessibilityToolbarPlugin.php:51
+msgid "Stronger and more visible keyboard focus indicators."
+msgstr "Indicadors de focus del teclat més clars i visibles."
+
+#: AccessibilityToolbarPlugin.php:53
+msgid "Custom colours"
+msgstr "Colors personalitzats"
+
+#: AccessibilityToolbarPlugin.php:54
+msgid "Choose your own text and background colours. Custom colours are applied only when the contrast ratio is at least 4.5:1."
+msgstr "Trieu els vostres colors de text i de fons. Els colors personalitzats només s’apliquen quan la relació de contrast és com a mínim de 4.5:1."
+
+#: AccessibilityToolbarPlugin.php:55
+msgid "Enable custom colours"
+msgstr "Activa els colors personalitzats"
+
+#: AccessibilityToolbarPlugin.php:56
+msgid "Use your own text and background colours instead of the default theme colours."
+msgstr "Utilitzeu els vostres colors de text i de fons en lloc dels colors per defecte del tema."
+
+#: AccessibilityToolbarPlugin.php:57
+msgid "Text colour"
+msgstr "Color del text"
+
+#: AccessibilityToolbarPlugin.php:58
+msgid "Background colour"
+msgstr "Color de fons"
+
+#: AccessibilityToolbarPlugin.php:59
+msgid "Reset custom colours"
+msgstr "Restableix els colors personalitzats"
+
+#: AccessibilityToolbarPlugin.php:61
+msgid "Reset all settings"
+msgstr "Restableix tots els ajustos"
+
+#: AccessibilityToolbarPlugin.php:63
+msgid "Text size set to %s."
+msgstr "La mida del text s’ha establert a %s."
+
+#: AccessibilityToolbarPlugin.php:64
+msgid "Font set to %s."
+msgstr "La tipografia s’ha establert a %s."
+
+#: AccessibilityToolbarPlugin.php:65
+msgid "%s enabled."
+msgstr "%s activat."
+
+#: AccessibilityToolbarPlugin.php:66
+msgid "%s disabled."
+msgstr "%s desactivat."
+
+#: AccessibilityToolbarPlugin.php:67
+msgid "All accessibility settings have been reset."
+msgstr "S’han restablert tots els ajustos d’accessibilitat."
+
+#: AccessibilityToolbarPlugin.php:68
+msgid "Custom colours have been reset."
+msgstr "S’han restablert els colors personalitzats."
+
+#: AccessibilityToolbarPlugin.php:69
+msgid "Custom colours enabled. Contrast ratio %s."
+msgstr "Colors personalitzats activats. Relació de contrast %s."
+
+#: AccessibilityToolbarPlugin.php:70
+msgid "Custom colours cannot be applied. Contrast ratio %s is below 4.5:1."
+msgstr "No es poden aplicar els colors personalitzats. La relació de contrast %s és inferior a 4.5:1."
+
+#: AccessibilityToolbarPlugin.php:71
+msgid "Contrast ratio: %s. This meets the minimum requirement."
+msgstr "Relació de contrast: %s. Això compleix el requisit mínim."
+
+#: AccessibilityToolbarPlugin.php:72
+msgid "Contrast ratio: %s. This is below the minimum requirement of 4.5:1."
+msgstr "Relació de contrast: %s. Això és inferior al requisit mínim de 4.5:1."
+
+#: AccessibilityToolbarPlugin.php:73
+msgid "High contrast was disabled because custom colours were enabled."
+msgstr "L’alt contrast s’ha desactivat perquè s’han activat els colors personalitzats."
+
+#: AccessibilityToolbarPlugin.php:74
+msgid "Custom colours were disabled because high contrast was enabled."
+msgstr "Els colors personalitzats s’han desactivat perquè s’ha activat l’alt contrast."
