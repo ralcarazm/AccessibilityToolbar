@@ -1,0 +1,483 @@
+@font-face {
+    font-family: "OpenDyslexic";
+    src: url("../fonts/OpenDyslexic-Regular.woff2") format("woff2"),
+         url("../fonts/OpenDyslexic-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "OpenDyslexic";
+    src: url("../fonts/OpenDyslexic-Bold.woff2") format("woff2"),
+         url("../fonts/OpenDyslexic-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+#accessibility-toolbar-wrapper {
+    position: fixed;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    z-index: 99999;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+#accessibility-toolbar-wrapper,
+#accessibility-toolbar-wrapper * {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#accessibility-toolbar-wrapper svg,
+#accessibility-toolbar-wrapper svg * {
+    font-family: initial;
+}
+
+#accessibility-toolbar-wrapper .accessibility-toggle {
+    width: 58px;
+    height: 58px;
+    border: none;
+    border-radius: 10px;
+    background: #222;
+    color: #fff;
+    font-size: 29px;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.20);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+#accessibility-toolbar-wrapper .accessibility-toggle:hover {
+    background: #111;
+}
+
+#accessibility-toolbar-wrapper .accessibility-toggle:focus {
+    outline: 3px solid #0b57d0;
+    outline-offset: 3px;
+}
+
+#accessibility-toolbar-wrapper .accessibility-toggle-icon {
+    width: 1em;
+    height: 1em;
+    display: block;
+    fill: currentColor;
+}
+
+#accessibility-toolbar-wrapper .accessibility-panel {
+    position: absolute;
+    right: 76px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 560px;
+    max-width: min(96vw, 560px);
+    max-height: calc(100vh - 2rem);
+    overflow-y: auto;
+    overflow-x: hidden;
+    overscroll-behavior: contain;
+    background: #fff;
+    color: #111;
+    border: 1px solid #d8d8d8;
+    border-radius: 16px;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.18);
+    padding: 1.25rem;
+}
+
+#accessibility-toolbar-wrapper .accessibility-panel-inner {
+    font-size: 16px;
+    padding-bottom: 0.25rem;
+}
+
+#accessibility-toolbar-wrapper .accessibility-title {
+    margin: 0 0 1rem 0;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #111;
+}
+
+#accessibility-toolbar-wrapper .accessibility-group {
+    margin: 0;
+    padding: 1rem 0;
+    border-top: 1px solid #e4e4e4;
+}
+
+#accessibility-toolbar-wrapper .accessibility-group:first-of-type {
+    border-top: none;
+    padding-top: 0.25rem;
+}
+
+#accessibility-toolbar-wrapper .accessibility-group-last {
+    padding-bottom: 0;
+}
+
+#accessibility-toolbar-wrapper .accessibility-section-header {
+    margin-bottom: 0.85rem;
+}
+
+#accessibility-toolbar-wrapper .accessibility-group-title {
+    margin: 0 0 0.3rem 0;
+    font-size: 21px;
+    line-height: 1.25;
+    font-weight: 700;
+    color: #111;
+}
+
+#accessibility-toolbar-wrapper .accessibility-group-help {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.45;
+    color: #555;
+}
+
+#accessibility-toolbar-wrapper .accessibility-inline-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.85rem;
+}
+
+#accessibility-toolbar-wrapper .accessibility-stepper {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #cfcfcf;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fafafa;
+}
+
+#accessibility-toolbar-wrapper .accessibility-stepper-button {
+    min-width: 56px;
+    min-height: 50px;
+    border: none;
+    background: #f4f4f4;
+    color: #111;
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 1;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#accessibility-toolbar-wrapper .accessibility-stepper-button > span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    line-height: 1;
+}
+
+#accessibility-toolbar-wrapper .accessibility-stepper-button:hover {
+    background: #ebebeb;
+}
+
+#accessibility-toolbar-wrapper .accessibility-stepper-button:focus {
+    outline: 3px solid #0b57d0;
+    outline-offset: -3px;
+}
+
+#accessibility-toolbar-wrapper .accessibility-stepper-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#accessibility-toolbar-wrapper .accessibility-stepper-value {
+    min-width: 96px;
+    min-height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    background: #fff;
+    color: #111;
+    border-left: 1px solid #d8d8d8;
+    border-right: 1px solid #d8d8d8;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#accessibility-toolbar-wrapper .accessibility-secondary-button,
+#accessibility-toolbar-wrapper .accessibility-reset-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0.75rem 1rem;
+    border: 1px solid #444;
+    background: #f4f4f4;
+    color: #111;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1.2;
+    text-transform: none;
+    letter-spacing: normal;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+#accessibility-toolbar-wrapper .accessibility-secondary-button:hover,
+#accessibility-toolbar-wrapper .accessibility-reset-button:hover {
+    background: #e9e9e9;
+}
+
+#accessibility-toolbar-wrapper .accessibility-secondary-button:focus,
+#accessibility-toolbar-wrapper .accessibility-reset-button:focus,
+#accessibility-toolbar-wrapper .accessibility-select:focus,
+#accessibility-toolbar-wrapper .accessibility-colour-input:focus,
+#accessibility-toolbar-wrapper .accessibility-toggle-card:focus-within {
+    outline: 3px solid #0b57d0;
+    outline-offset: 3px;
+}
+
+#accessibility-toolbar-wrapper .accessibility-reset-button {
+    width: 100%;
+}
+
+#accessibility-toolbar-wrapper .accessibility-select {
+    width: 100%;
+    min-height: 50px;
+    border: 1px solid #cfcfcf;
+    border-radius: 12px;
+    background: #fff;
+    color: #111;
+    padding: 0.85rem 0.95rem;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+#accessibility-toolbar-wrapper .accessibility-toggle-list {
+    display: grid;
+    gap: 0.8rem;
+}
+
+#accessibility-toolbar-wrapper .accessibility-toggle-list-two-columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+#accessibility-toolbar-wrapper .accessibility-toggle-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+    align-items: center;
+    padding: 0.95rem 1rem;
+    border: 1px solid #d8d8d8;
+    border-radius: 14px;
+    background: #fafafa;
+    cursor: pointer;
+}
+
+#accessibility-toolbar-wrapper .accessibility-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#accessibility-toolbar-wrapper .accessibility-toggle-card-title,
+#accessibility-toolbar-wrapper .accessibility-colour-label {
+    font-size: 16px;
+    font-weight: 700;
+    color: #111;
+}
+
+#accessibility-toolbar-wrapper .accessibility-toggle-card-description,
+#accessibility-toolbar-wrapper .accessibility-contrast-status {
+    font-size: 16px;
+    line-height: 1.45;
+    color: #555;
+}
+
+#accessibility-toolbar-wrapper .accessibility-switch {
+    position: relative;
+    width: 48px;
+    height: 28px;
+    border-radius: 999px;
+    background: #cfcfcf;
+}
+
+#accessibility-toolbar-wrapper .accessibility-switch::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+}
+
+#accessibility-toolbar-wrapper .accessibility-checkbox:checked + .accessibility-toggle-card-main + .accessibility-switch {
+    background: #222;
+}
+
+#accessibility-toolbar-wrapper .accessibility-checkbox:checked + .accessibility-toggle-card-main + .accessibility-switch::after {
+    transform: translateX(20px);
+}
+
+#accessibility-toolbar-wrapper .accessibility-colour-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.85rem;
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+#accessibility-toolbar-wrapper .accessibility-colour-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    padding: 0.85rem 0.95rem;
+    border: 1px solid #d8d8d8;
+    border-radius: 14px;
+    background: #fafafa;
+}
+
+#accessibility-toolbar-wrapper .accessibility-colour-input {
+    width: 100%;
+    min-height: 52px;
+    border: 1px solid #cfcfcf;
+    border-radius: 10px;
+    background: #fff;
+    cursor: pointer;
+    padding: 0.3rem;
+}
+
+#accessibility-toolbar-wrapper .accessibility-colour-input[aria-invalid="true"] {
+    border-color: #b3261e;
+    box-shadow: 0 0 0 1px #b3261e inset;
+}
+
+#accessibility-toolbar-wrapper .accessibility-contrast-status.is-valid {
+    color: #1b5e20;
+}
+
+#accessibility-toolbar-wrapper .accessibility-contrast-status.is-invalid {
+    color: #b3261e;
+}
+
+body.at-text-resize {
+    --at-text-scale: 1;
+}
+
+body.at-text-resize :where(
+    p, li, a, span, blockquote, dt, dd, td, th, label,
+    input, textarea, select, figcaption, cite, time,
+    h1, h2, h3, h4, h5, h6
+):not(#accessibility-toolbar-wrapper):not(#accessibility-toolbar-wrapper *) {
+    font-size: calc(1em * var(--at-text-scale)) !important;
+}
+
+body.at-underline-links a:not(#accessibility-toolbar-wrapper a) {
+    text-decoration: underline !important;
+}
+
+body.at-line-spacing :where(
+    p, li, div, span, td, th, label, a
+):not(#accessibility-toolbar-wrapper):not(#accessibility-toolbar-wrapper *) {
+    line-height: 1.8 !important;
+}
+
+body.at-letter-spacing :where(
+    p, li, div, span, a, h1, h2, h3, h4, h5, h6, td, th, label
+):not(#accessibility-toolbar-wrapper):not(#accessibility-toolbar-wrapper *) {
+    letter-spacing: 0.08em !important;
+}
+
+body.at-font-arial :not(#accessibility-toolbar-wrapper):not(#accessibility-toolbar-wrapper *) {
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+body.at-font-verdana :not(#accessibility-toolbar-wrapper):not(#accessibility-toolbar-wrapper *) {
+    font-family: Verdana, Geneva, sans-serif !important;
+}
+
+body.at-font-comic-sans :not(#accessibility-toolbar-wrapper):not(#accessibility-toolbar-wrapper *) {
+    font-family: "Comic Sans MS", "Comic Sans", cursive !important;
+}
+
+body.at-font-open-dyslexic :not(#accessibility-toolbar-wrapper):not(#accessibility-toolbar-wrapper *) {
+    font-family: "OpenDyslexic", Arial, Helvetica, sans-serif !important;
+}
+
+body.at-enhanced-focus :where(
+    a, button, input, select, textarea, summary, [tabindex], [role="button"], [role="switch"], [role="link"]
+):focus,
+body.at-enhanced-focus :where(
+    a, button, input, select, textarea, summary, [tabindex], [role="button"], [role="switch"], [role="link"]
+):focus-visible {
+    outline: 3px solid #0b57d0 !important;
+    outline-offset: 3px !important;
+    box-shadow: 0 0 0 2px #ffffff !important;
+}
+
+body.at-high-contrast.at-enhanced-focus :where(
+    a, button, input, select, textarea, summary, [tabindex], [role="button"], [role="switch"], [role="link"]
+):focus,
+body.at-high-contrast.at-enhanced-focus :where(
+    a, button, input, select, textarea, summary, [tabindex], [role="button"], [role="switch"], [role="link"]
+):focus-visible,
+html.at-high-contrast body.at-enhanced-focus :where(
+    a, button, input, select, textarea, summary, [tabindex], [role="button"], [role="switch"], [role="link"]
+):focus,
+html.at-high-contrast body.at-enhanced-focus :where(
+    a, button, input, select, textarea, summary, [tabindex], [role="button"], [role="switch"], [role="link"]
+):focus-visible {
+    outline: 3px solid #ffff00 !important;
+    outline-offset: 3px !important;
+    box-shadow: 0 0 0 2px #000000 !important;
+}
+
+@media (max-width: 680px) {
+    #accessibility-toolbar-wrapper .accessibility-panel {
+        width: min(96vw, 96vw);
+    }
+
+    #accessibility-toolbar-wrapper .accessibility-toggle-list-two-columns,
+    #accessibility-toolbar-wrapper .accessibility-colour-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #accessibility-toolbar-wrapper .accessibility-inline-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #accessibility-toolbar-wrapper .accessibility-secondary-button {
+        width: 100%;
+    }
+}
+
+@media (max-height: 820px) {
+    #accessibility-toolbar-wrapper {
+        top: 1rem;
+        transform: none;
+    }
+
+    #accessibility-toolbar-wrapper .accessibility-panel {
+        top: 0;
+        transform: none;
+        max-height: calc(100vh - 2rem);
+    }
+}
