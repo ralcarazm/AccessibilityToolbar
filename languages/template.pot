@@ -1,0 +1,198 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Accessibility Toolbar 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-25 10:39\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: ChatGPT\n"
+
+#: AccessibilityToolbarPlugin.php:23
+msgid "Open accessibility options"
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:24
+msgid "Accessibility options"
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:25
+msgid "Accessibility"
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:27
+msgid "Text size"
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:28
+msgid "Use the minus and plus buttons to adjust the text size. The current value is announced automatically."
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:29
+msgid "Decrease text size"
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:30
+msgid "Increase text size"
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:31
+msgid "Reset text size"
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:33
+msgid "Font"
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:34
+msgid "Choose a reading font."
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:35
+msgid "Default"
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:36
+msgid "Arial"
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:37
+msgid "Verdana"
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:38
+msgid "Comic Sans"
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:39
+msgid "OpenDyslexic"
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:41
+msgid "Appearance"
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:42
+msgid "High contrast"
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:43
+msgid "Black background and yellow text."
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:44
+msgid "Underline links"
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:45
+msgid "Always underline hyperlinks for easier recognition."
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:46
+msgid "Increase line spacing"
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:47
+msgid "Add more vertical space between lines of text."
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:48
+msgid "Increase letter spacing"
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:49
+msgid "Add more space between letters."
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:50
+msgid "Enhanced focus"
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:51
+msgid "Stronger and more visible keyboard focus indicators."
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:53
+msgid "Custom colours"
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:54
+msgid "Choose your own text and background colours. Custom colours are applied only when the contrast ratio is at least 4.5:1."
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:55
+msgid "Enable custom colours"
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:56
+msgid "Use your own text and background colours instead of the default theme colours."
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:57
+msgid "Text colour"
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:58
+msgid "Background colour"
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:59
+msgid "Reset custom colours"
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:61
+msgid "Reset all settings"
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:63
+msgid "Text size set to %s."
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:64
+msgid "Font set to %s."
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:65
+msgid "%s enabled."
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:66
+msgid "%s disabled."
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:67
+msgid "All accessibility settings have been reset."
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:68
+msgid "Custom colours have been reset."
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:69
+msgid "Custom colours enabled. Contrast ratio %s."
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:70
+msgid "Custom colours cannot be applied. Contrast ratio %s is below 4.5:1."
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:71
+msgid "Contrast ratio: %s. This meets the minimum requirement."
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:72
+msgid "Contrast ratio: %s. This is below the minimum requirement of 4.5:1."
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:73
+msgid "High contrast was disabled because custom colours were enabled."
+msgstr ""
+
+#: AccessibilityToolbarPlugin.php:74
+msgid "Custom colours were disabled because high contrast was enabled."
+msgstr ""
+
