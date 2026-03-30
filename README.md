@@ -5,6 +5,8 @@ When activated, it opens a panel with several interface customisation options de
 
 The plugin is intended to give visitors quick access to common accessibility adjustments without requiring modifications to the underlying theme files.
 
+![AccessibilityToolbar in action](AccessibilityToolbar.png)
+
 ## Features
 
 The toolbar currently includes the following options:
